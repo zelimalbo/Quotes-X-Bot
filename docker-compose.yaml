@@ -1,0 +1,20 @@
+version: "3.4"
+services:
+  ehb:
+    build: .
+    environment:
+      USE_MASTODON: false
+      MASTODON_SERVER: ""
+      MASTODON_ACCESS_TOKEN: ""
+      USE_BLUESKY: false
+      BLUESKY_SERVER: ""
+      BLUESKY_EMAIL: ""
+      BLUESKY_APP_PASSWORD: ""
+      USE_TWITTER: true
+      TWITTER_CUSTOMER_API_KEY: "rAYX9j0D3RgNvZKTae5QbGaog"
+      TWITTER_CUSTOMER_API_KEY_SECRET: "sxwKMYCtSxJ5LyiMRM7Hsxd5rJsoV3lPhWY2EeaYVC780I8R5V"
+      TWITTER_ACCESS_TOKEN: "1787906968369188864-AQQqdzCrKugUedbZbPolNeXKv1C00y"
+      TWITTER_ACCESS_TOKEN_SECRET: "G03fvObDJLUgGzVFIZ6qH5Cc0uCOnslxwz531JJbk18Gv"
+      DEBUG_MODE: false
+    volumes:
+    - ./media:/ehb/media 
